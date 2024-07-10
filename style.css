@@ -1,0 +1,172 @@
+/* Cuerpo */
+body{
+    font-family: "Montserrat", sans-serif;
+    transition: 1.;
+    transition: all 1.5s ease;
+    background-color: #ABDBE6;
+}
+
+/* Modo Oscuro */
+#toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#label_toggle{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 3em;
+    color: rebeccapurple;
+    cursor: pointer;
+}
+
+.dark{
+    background-color:  #7888DE;
+    transition: all 1.5s ease;
+    color: white;
+}
+
+/* Encabezado */
+.header{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Cajas de texto */
+.texto-escribir {
+    margin-right: auto;
+    margin-left: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.texto-escribir, textarea{
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.texto-escribir input, textarea{
+
+    width: 15%;
+    height: 350px;
+    padding: 20px;
+    margin: 10px 30px 0;
+    text-align: center;
+
+    border: solid 1px whitesmoke;
+    border-radius: 0px 10px 0px 10px;
+    background-color: #CCCCFF;
+    box-shadow: 10px 13px 34px 0px rgba(0,0,0,0.5);
+
+    resize: none;
+}
+
+.texto-aviso{
+    text-align: center;
+}
+
+/* Botones */
+.texto-devolver{
+    padding: 20px;
+    margin: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.botones{
+    text-align: center;
+   
+}
+
+#botones{
+    text-align: center;
+    margin: 5px 20px;
+    margin-top: 30px;
+    width: 140px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background: #0A3871 ;
+    box-shadow: 10px 13px 34px 0px rgba(0,0,0,0.5);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+#botones:hover{
+    transform: scale(1.1);
+    transition: all 1s ease; 
+}
+
+/* final de la pagina */
+footer{
+    font-size: 35px;
+    text-align: center;
+    margin: 5px;
+    margin-top: 50px;
+}
+
+footer a{
+    color: #1A5276;
+}
+
+/* links en forma de botones */
+a:hover{
+    color: #5DADE2;
+    transition: 1.3s;
+
+}
+
+a:active{
+    color: #5D6D7E;
+}
+
+/*pantalla de celulares*/
+@media screen and (max-width:480px){
+    h1{
+        font-size: 33px;
+        padding: 0 0 0 0;
+    }
+    .texto-escribir input{
+        width: 65%;
+        height: 150px;
+    }
+    .texto-escribir{
+        display: block;
+        margin: 0 0 0 0;
+    }
+    .texto-escribir textarea{
+        width: 65%;
+        height: 150px;   
+    }
+}
+
+/* pantalla de tablets */
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .texto-escribir input{
+        width: 25%;
+        height: 280px;
+        display: inline-block;
+    }
+    .texto-escribir textarea{
+        width: 25%;
+        height: 280px;
+    }
+}
+
+
+
+
+
